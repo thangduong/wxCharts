@@ -15,7 +15,6 @@ set(CMAKE_DEBUG_POSTFIX "d" CACHE STRING "Postfix for debug binaries")
 set(wxWidgets_ROOT_DIR "" CACHE PATH "")
 set(wxWidgets_wxrc_EXECUTABLE "" CACHE FILEPATH "")
 
-
 option(BUILD_SHARED_LIBS "Build shared libraries" OFF)
 if(BUILD_SHARED_LIBS)
     message(WARNING "Warning for a shared build: API can change in any version!")
