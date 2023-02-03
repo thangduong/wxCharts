@@ -39,7 +39,10 @@ class wxMath2DPlotOptions : public wxChartOptions
 {
 public:
     /// Constructs a wxMath2DPlotOptions instance.
-    wxMath2DPlotOptions();
+    wxMath2DPlotOptions(double dotRadius = 1,
+						double dotStrokeWidth = 1,
+						double lineWidth = 1,
+						double hitDetectionRange = 24);
 
     /// Gets the options for the grid.
     /// @return The options for the grid.

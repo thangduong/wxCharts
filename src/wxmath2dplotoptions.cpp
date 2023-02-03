@@ -22,9 +22,12 @@
 
 #include "wxmath2dplotoptions.h"
 
-wxMath2DPlotOptions::wxMath2DPlotOptions()
-    : m_dotRadius(4), m_dotStrokeWidth(1),
-    m_lineWidth(2), m_hitDetectionRange(24)
+wxMath2DPlotOptions::wxMath2DPlotOptions(double dotRadius,
+						double dotStrokeWidth,
+						double lineWidth,
+						double hitDetectionRange)
+    : m_dotRadius(dotRadius), m_dotStrokeWidth(dotStrokeWidth),
+    m_lineWidth(dotStrokeWidth), m_hitDetectionRange(dotStrokeWidth)
 {
     auto temp = [](wxDouble x){return x;};
     m_axisFuncX = temp;
